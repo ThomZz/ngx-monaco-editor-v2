@@ -1,15 +1,8 @@
-# Monaco Editor Component for Angular 2 and above.
+# Monaco Editor Component for Angular 15 and above.
 
- - Angular <= 4: v3.x.x
- - Angular 5: v5.x.x
- - Angular 6: v6.x.x
- - Angular 7: v7.x.x
- - Angular 8: v8.x.x
- - Angular 9: v9.x.x
- - Angular 10: v10.x.x 
- - Angular 12: v12.x.x
- - Angular 13: not supported ( best to use 14, otherwise contact author)
- - Angular 14: v14.x.x
+Forked from [ngx-monaco-editor-v2](https://github.com/miki995/ngx-monaco-editor-v2) thanks to [miki995](https://github.com/miki995)! 
+
+Aimed to be used only for Angular apps 15 and above.
 
 Using this Module you can utilize the Monaco Editor as an Angular Component. Feel free to contribute, raise feature requests and make it better.
 
@@ -21,14 +14,7 @@ Supports all the options available in monaco-editor [Monaco Editor Options](http
 
 Install from npm repository:
 ```
-npm install monaco-editor ngx-monaco-editor-v2 --save
- ```
-
-Breaking change from v10, is to use monaco-editor next to ngx-monaco-editor-v2 in your package.json file.
- 
-For angular version 6 use v6.x.x
-```
-npm install ngx-monaco-editor-v2@6.0.0 --save
+npm install monaco-editor @thomzz/ngx-monaco-editor --save
  ```
 
 Add the glob to assets in `angular.json`
@@ -46,24 +32,6 @@ Add the glob to assets in `angular.json`
   ...
 }
  ```
-
-
-For Angular 6 and below, add the glob to assets in `.angular-cli.json` schema - `projects.[project-name].architect.build` (to make monaco-editor lib available to the app):
-```typescript
-{
-  "options":{
-        {"assets": [
-          { "glob": "**/*", "input": "node_modules/ngx-monaco-editor/assets/monaco", "output": "./assets/monaco/" }
-
-        ],
-        ...
-        }
-    ...
-    },
-  ...
-}
- ```
-
 ### Sample
 Include MonacoEditorModule in Main Module and Feature Modules where you want to use the editor component.(eg: app.module.ts): 
 ```typescript
@@ -308,4 +276,4 @@ export class AppComponent {
 
 ## License
 
-MIT © [Miroslav Maksimovic](https://github.com/miki995)
+MIT © [Thomas-Louis Simard](https://github.com/miki995)
